@@ -9,3 +9,9 @@ class StaticStorage(S3BotoStorage):
 class MediaStorage(S3BotoStorage):
     location = 'media'
     file_overwrite = False
+
+
+
+
+StaticRootS3BotoStorage = lambda: S3BotoStorage(location='static')
+MediaRootS3BotoStorage  = lambda: S3BotoStorage(location='media')

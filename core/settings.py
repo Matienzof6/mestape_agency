@@ -298,12 +298,12 @@ if not DEBUG:
     #s3 static settings
     STATIC_LOCATION = 'static'
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATIC_LOCATION}/'
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    STATICFILES_STORAGE = 'core.storages_backends.StaticRootS3BotoStorage'
 
     #s3 public media settings
     PUBLIC_MEDIA_LOCATION = 'media'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{PUBLIC_MEDIA_LOCATION}/'
-    DEFAULT_FILE_STORAGE = 'core.storage_backends.MediaStore'
+    DEFAULT_FILE_STORAGE = 'core.storage_backends.MediaRootS3BotoStorage'
 
     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'build/static'),)
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
