@@ -13,8 +13,8 @@ const middleware = [thunk];
 const store = createStore(
     rootReducer,
     initialState,
-    // applyMiddleware(...middleware) // Descomentar para modo deploy
-    composeWithDevTools(applyMiddleware(...middleware)) // Descomentar para modo desarrollo
+    applyMiddleware(...middleware) // Descomentar para modo deploy
+    // composeWithDevTools(applyMiddleware(...middleware)) // Descomentar para modo desarrollo
 );
 
 
