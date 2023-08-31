@@ -267,7 +267,7 @@ ACTIVE_CAMPAIGN_URL=os.environ.get('ACTIVE_CAMPAIGN_URL')
 
 
 if not DEBUG:
-    ALLOWED_HOSTS = env('ALLOWED_HOSTS_DEPLOY')
+    ALLOWED_HOSTS = ['www.mestape.com', 'mestape.com', 'mestape.onrender.com']
     CORS_ORIGIN_WHITELIST = env.list('CORS_ORIGIN_WHITELIST_DEPLOY')
     CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEPLOY')
 
