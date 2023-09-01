@@ -24,7 +24,7 @@ import JavascriptDev from "containers/pages/services/development/JavascriptDev";
 
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <HelmetProvider>
       <Helmet>
@@ -53,7 +53,7 @@ function App() {
       <Provider store={store}>
         <Router basename="/">
           <AnimatePresence initial={false}>
-            <Routes location={location} key={location.pathname}>
+            <Routes>
                 {/* Error display */}
                 <Route path="*" element={<Error404/>}/>
 
