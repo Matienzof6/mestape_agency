@@ -2,7 +2,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import store from './store'
 import { Provider } from "react-redux";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 
@@ -51,7 +51,7 @@ function App() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Provider store={store}>
-        <Router>
+        <Router basename="/">
           <AnimatePresence initial={false}>
             <Routes>
                 {/* Error display */}
