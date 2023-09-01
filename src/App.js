@@ -1,4 +1,4 @@
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, useLocation} from "react-router-dom";
 import store from './store'
 import { Provider } from "react-redux";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -24,7 +24,7 @@ import JavascriptDev from "containers/pages/services/development/JavascriptDev";
 
 
 function App() {
-  // const location = useLocation();
+  const location = useLocation();
   return (
     <HelmetProvider>
       <Helmet>
@@ -53,7 +53,7 @@ function App() {
       <Provider store={store}>
         <Router basename="/">
           <AnimatePresence initial={false}>
-            <Routes>
+            <Routes location={location} key={location.pathname}>
                 {/* Error display */}
                 <Route path="*" element={<Error404/>}/>
 
