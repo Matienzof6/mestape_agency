@@ -156,7 +156,7 @@ function Services(){
                 <meta name="twitter:card" content="summary_large_image" />
             </Helmet>   
             <Navbar/>
-            <div className="pt-28"> 
+            <div className="pt-24"> 
             <div data-scroll-section className="pt-28">
                     <div className="mx-auto max-w-1700 px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-1700">

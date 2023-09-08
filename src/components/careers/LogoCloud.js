@@ -1,8 +1,8 @@
 function LogoCloud(){
     return(
         <div className="relative bg-gray-50 pt-40 px-4 pb-36 sm:px-6 lg:px-8 lg:pb-28">
-            <div className="text-left relative mx-12 max-w-full">
-                <h2 className="text-5xl font-semibold tracking-tight text-gray-800 pb-12 pl-28">Work with top notch companies</h2>        
+            <div className="text-left">
+                <h2 className="text-5xl font-semibold tracking-tight text-gray-800 pb-12 pl-12">Work with top notch companies</h2>        
             </div>
             <div className="mx-12 max-w-full py-12 px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">

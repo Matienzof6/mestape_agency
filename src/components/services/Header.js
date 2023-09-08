@@ -1,4 +1,5 @@
-
+import { Link } from "react-router-dom"
+import gifServices from "assets/img/services/giphy.gif"
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
@@ -91,33 +92,42 @@ function Header(){
 
     return(
         <main>
-        <div className="relative">
-          <div className="mx-auto max-w-4xl  xl:pt-40 xl:pb-48 lg:pt-40 lg:pb-48 pt-24 pb-12 ">
-            <div>
-              <div>
-                <h1 className="text-4xl font-semibold tracking-tight pb-16 leading-8 sm:text-7xl">
-                  Software Development Services
-                </h1>
-                <p className="mt-16 text-2xl max-w-3xl leading-8 text-black ">
-                We love to shake established thought-patterns and create what has never been attempted before. We take seeds and grow jungles
-                </p>
-                <div className="absolute bottom-0 left-0 flex space-x-6 xl:mx-12 mx-0">
-                {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} className="text-gray-900 hover:text-gray-800">
-                    <span className="sr-only">{item.name}</span>
-                    <item.icon className="h-8 w-8" aria-hidden="true" />
-                  </a>
-                ))}
+        <section>
+                <div className="max-w-screen-3xl mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
+                    <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
+                        <h1 className="text-sm text-indigo-600 font-medium">
+                            Over 200 successful deals
+                        </h1>
+                        <h2 className="text-6xl font-semibold tracking-tight pb-16 sm:text-7xl text-gray-900">
+                            We help startups to grow and make money
+                        </h2>
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                        </p>
+                        <div className="gap-x-3 space-y-3 sm:flex sm:space-y-0">
+                          <div className=" bottom-0 left-0 flex space-x-6 xl:mx-12 mx-0">
+                            {navigation.social.map((item) => (
+                              <a key={item.name} href={item.href} className="text-gray-900 hover:text-gray-800">
+                                <span className="sr-only">{item.name}</span>
+                                <item.icon className="h-8 w-8" aria-hidden="true" />
+                              </a>
+                            ))}
+                          </div>
+                         
+                        </div>
+                    </div>
+                    <div className="flex-none mx-12 pb-10">
+                      <img
+                        src={gifServices}
+                        className=" md:rounded-tl-[108px]"
+                        alt=""
+                      />
+                    </div>
                 </div>
-              </div>
-              <div className="absolute inset-x-0 top-[calc(100%-20rem)] -z-10 transform-gpu overflow-hidden bg-white blur-lg lg:top-[calc(100%-45rem)] sm:top-[calc(100%-30rem)]">
-                <img src="https://bafybeicgamofiuvkc6wjxl4wwzzh6pdovhcvvyc2gw5verruiolnykzz3i.ipfs.w3s.link/bbub3.jpg" className='w-full h-full object-cover' alt=''/>
-              </div>
-            </div>
-          </div>
-        </div>
+            </section>
       </main>
     )
 }
 
 export default Header
+
