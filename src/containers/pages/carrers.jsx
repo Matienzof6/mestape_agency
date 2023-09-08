@@ -43,7 +43,6 @@ function Careers(){
                 <Testimonial/>
                 <LogoCloud/>
                 <Features/>
-                <Features/>
                 <PositionsList/>
                 
             </div>

@@ -14,6 +14,8 @@ module.exports = {
       "2xl":"0 0px 40px 0px rgba(0, 0, 0, 0.1)",
     },
     screens: {
+      "xs":"0px",
+      
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 

@@ -12,7 +12,7 @@ function ServicesList({posts, section_title}){
                 <div className="relative mx-auto lg:mx-12 max-w-full">
                     <div className="text-left">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{section_title}</h2>
-                    <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+                    <p className="mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
                     </p>
                     </div>

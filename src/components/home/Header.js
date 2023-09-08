@@ -95,12 +95,12 @@ function Header(){
     return(
         <main>
         <div className="relative px-6 lg:px-8">
-          <div className="mx-auto lg:mx-12 max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
+          <div className=" lg:mx-12 max-w-full xl:mx-12 xl:pt-40 xl:pb-64 lg:pt-40 lg:pb-48 pt-24 pb-12">
             <div>
               <div>
-                <h1 className="text-4xl font-semibold tracking-tight pb-16 sm:text-7xl">
-                  Agency for <span> </span>
-                  <span className='inline-flex pb-2 pt-2' style={{ color: '#0073ec', fontWeight: 'bold' }}>
+                <h1 className="text-6xl font-semibold tracking-tight pb-16">
+                  Agency for <span className='pb-4'> </span>
+                  <span className='inline-flex absolute px-4' style={{ color: '#0073ec', fontWeight: 'bold' }}>
                   <Typewriter
                         words={['Creators', 'Dreamers', 'Companies', 'You!']}
                         loop={0}
