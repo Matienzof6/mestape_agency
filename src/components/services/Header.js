@@ -99,7 +99,7 @@ function Header(){
                             Over 200 successful deals
                         </h1>
                         <h2 className="text-6xl font-semibold tracking-tight pb-16 sm:text-7xl text-gray-900">
-                            We help startups to grow and make money
+                            We help startups grow and make money
                         </h2>
                         <p>
                             Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
