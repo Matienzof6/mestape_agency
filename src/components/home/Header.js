@@ -114,27 +114,27 @@ function Header(){
                 </h1>
                 <ul className='flex gap-8 pb-10'>
                     <li className='inline-flex border-b-2 border-transparent hover:border-blue-button transition duration-300 ease-in-out'>
-                        <Link to='/servicios/algoAqui' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
+                        <Link to='/services/javascript' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
                             Web
                         </Link>
                     </li>
                     <li className='inline-flex border-b-2 border-transparent hover:border-blue-button transition duration-300 ease-in-out'>
-                        <Link to='/servicios/algoAqui' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
+                        <Link to='/services/' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
                             Apps
                         </Link>
                     </li>
                     <li className='inline-flex border-b-2 border-transparent hover:border-blue-button transition duration-300 ease-in-out'>
-                        <Link to='/servicios/algoAqui' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
+                        <Link to='/services/' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
                             Video Games
                         </Link>
                     </li>
                     <li className='inline-flex border-b-2 border-transparent hover:border-blue-button transition duration-300 ease-in-out'>
-                        <Link to='/servicios/algoAqui' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
+                        <Link to='/services/' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
                             Marketing
                         </Link>
                     </li>
                     <li className='inline-flex border-b-2 border-transparent hover:border-blue-button transition duration-300 ease-in-out'>
-                        <Link to='/servicios/algoAqui' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
+                        <Link to='/services/' className='mt-6 text-xl font-medium leading-8 text-gray-700 sm:text-center'>
                             Crypto
                         </Link>
                     </li>
