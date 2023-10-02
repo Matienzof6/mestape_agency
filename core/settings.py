@@ -21,7 +21,7 @@ DOMAIN=os.environ.get('DOMAIN')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS_DEV')
 
@@ -126,6 +126,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# PARA DESARROLLO USAR :
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -133,7 +134,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 #     }
 # }
 
-
+# PARA DEPLOY USAR :
 DATABASES = {
         "default": env.db("DATABASE_URL"),
     }

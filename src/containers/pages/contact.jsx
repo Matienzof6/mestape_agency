@@ -148,9 +148,9 @@ function Contact(){
             </dl>
             <p className="mt-6 text-base text-gray-500">
               Looking for careers?{' '}
-              <a href="#" className="font-medium text-gray-700 underline">
+              <Link  to={'/careers'} className="font-medium text-gray-700 underline">
                 View all job openings
-              </a>
+              </Link>
               .
             </p>
           </div>
